@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background-color: rgba(255, 0, 0, 0.199);
+}
+
+::-moz-selection {
+  background-color: rgba(255, 0, 0, 0.199);
+}
+
+body {
+    background: #000;
+    background: linear-gradient(223deg, rgb(0, 0, 0) 0%, rgb(85, 27, 27) 0%, rgb(8, 0, 0) 69%);
+    color: white;
+    overflow-x: hidden;
+    min-height: 100vh;
+    overscroll-behavior: unset;
+}
+
+.container{
+    max-width: 1100px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    background: rgba(0, 0, 0, 0.466);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 3px 3px 8px #000;
+
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #ff1e3c;
+    color: white;
+}
+.navbar-dark .navbar-nav .nav-link {
+    transition: color 0.3s ease;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ff1e3c;
+}
+
+.section-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: white;
+}
+
+.build-wrapper {
+    max-width: 900px;
+    margin: auto;
+}
+
+.build-card {
+    background: rgba(255,255,255,0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 18px;
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.build-card:hover {
+    border-color: #ff1e3c;
+    transform: translateY(-4px);
+}
+
+.build-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.build-header h3 {
+    margin: 0;
+    font-weight: 600;
+}
+.build-subtext{
+    font-size: 13px;
+    opacity: 0.6;
+    margin: 2px 0 0 0;
+}
+
+.build-header i {
+    transition: 0.3s ease;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.build-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.build-details.active {
+    max-height: 2000px;
+    margin-top: 25px;
+}
+
+.build-section {
+    margin-bottom: 25px;
+}
+
+.build-section h4 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-bottom: 15px;
+}
+
+.icon-row img {
+    width: 60px;
+    border-radius: 12px;
+    transition: 0.2s ease;
+}
+
+.icon-row img:hover {
+    transform: scale(1.1);
+}
+
+.tooltip-inner {
+    background-color: #2b0000;
+    color: white;
+    opacity: 0.85;
+    font-size: 13px;
+    border-radius: 8px;
+}
+
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: #2b0000;
+}
+
+@media (max-width: 576px){
+
+    .section-title{
+        font-size: 28px;
+    }
+    .build-card{
+        padding: 18px;
+    }
+    .icon-row img{
+        width: 48px;
+    }
+    .build-subtext{
+        font-size: 12px;
+    }
+}

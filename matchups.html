@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KatRuined - Matchups</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/matchups.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: rgba(0, 0, 0, 0.747);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" style="color: #ff1e3c; font-weight: bold; font-size: 30px;">KatRuined</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="builds and runes.html">Builds & Runes</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="matchups.html">Matchups</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Other</a>
+                        <ul class="dropdown-menu" style="background-color: rgba(46, 0, 0, 0.9);">
+                            <li><a class="dropdown-item" href="story.html" style="color: white;">Story</a></li>
+                            <li><a class="dropdown-item" href="skins.html" style="color: white;">Skins</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="matchups-container">
+        
+        <div class="tab-buttons">
+            <button class="tab-btn active" onclick="openTab(event, 'best')">WORST MATCHUPS</button>
+            <button class="tab-btn" onclick="openTab(event, 'worst')">BEST MATCHUPS</button>
+        </div>
+
+        <div id="best" class="tab-content active">
+            <h2 class="section-title">Worst matchups for Katarina</h2>
+            <p class="section-desc">These champs are <span class="strong">strong</span> against Katarina at most phases of the game. They’re listed based on their win rate against Katarina.</p>
+            
+            <div class="matchups-row">
+                <div class="champ-info">
+                    <img src="img/mathups/vladimir.webp" alt="">
+                    <span class="champ-name">Vladimir</span>
+                </div>
+                <div class="stats">
+                    <span class="winrate wr-red-worst">53.3%</span>
+                    <span class="matches">3 170 Games</span>
+                </div>
+            </div>
+            <div class="matchups-row">
+                <div class="champ-info">
+                    <img src="img/mathups/lissandra.webp" alt="">
+                    <span class="champ-name">Lissandra</span>
+                </div>
+                <div class="stats">
+                    <span class="winrate wr-red-worst">52.3%</span>
+                    <span class="matches">5 345 Games</span>
+                </div>
+            </div>
+            <div class="matchups-row">
+                <div class="champ-info">
+                    <img src="img/mathups/ekko.webp" alt="">
+                    <span class="champ-name">Ekko</span>
+                </div>
+                <div class="stats">
+                    <span class="winrate wr-red-worst">52.3%</span>
+                    <span class="matches">2 651 Games</span>
+                </div>
+            </div>
+            <div class="matchups-row">
+                <div class="champ-info">
+                    <img src="img/mathups/cassiopeia.webp" alt="">
+                    <span class="champ-name">Cassiopeia</span>
+                </div>
+                <div class="stats">
+                    <span class="winrate wr-red-worst">52.0%</span>
+                    <span class="matches">977 Games</span>
+                </div>
+            </div>
+            <div class="matchups-row">
+                <div class="champ-info">
+                    <img src="img/mathups/anivia.webp" alt="">
+                    <span class="champ-name">Anivia</span>
+                </div>
+                <div class="stats">
+                    <span class="winrate wr-red-critical">51.4%</span>
+                    <span class="matches">2 584 Games</span>
+                </div>
+            </div>
+            <div class="matchups-row">
+                <div class="champ-info">
+                    <img src="img/mathups/galio.webp" alt="">
+                    <span class="champ-name">Galio</span>
+                </div>
+                <div class="stats">
+                    <span class="winrate wr-red-critical">51.3%</span>
+                    <span class="matches">4 437 Games</span>
+                </div>
+            </div>
+            <div class="matchups-row">
+                <div class="champ-info">
+                    <img src="img/mathups/vex.webp" alt="">
+                    <span class="champ-name">Vex</span>
+                </div>
+                <div class="stats">
+                    <span class="winrate wr-red-critical">51.3%</span>
+                    <span class="matches">2 958 Games</span>
+                </div>
+            </div>
+            <div class="matchups-row">
+                <div class="champ-info">
+                    <img src="img/mathups/kassadin.webp" alt="">
+                    <span class="champ-name">Kassadin</span>
+                </div>
+                <div class="stats">
+                    <span class="winrate wr-red-low">51.0%</span>
+                    <span class="matches">3 041 Games</span>
+                </div>
+            </div>
+            <div class="matchups-row">
+                <div class="champ-info">
+                    <img src="img/mathups/diana.webp" alt="">
+                    <span class="champ-name">Diana</span>
+                </div>
+                <div class="stats">
+                    <span class="winrate wr-red-low">50.9%</span>
+                    <span class="matches">4 017 Games</span>
+                </div>
+            </div>
+            <div class="matchups-row">
+                <div class="champ-info">
+                    <img src="img/mathups/akali.webp" alt="">
+                    <span class="champ-name">akali</span>
+                </div>
+                <div class="stats">
+                    <span class="winrate wr-red-low">50.8%</span>
+                    <span class="matches">5 779 Games</span>
+                </div>
+            </div>
+            <div class="matchups-row">
+                <div class="champ-info">
+                    <img src="img/mathups/yasuo.webp" alt="">
+                    <span class="champ-name">Yasuo</span>
+                </div>
+                <div class="stats">
+                    <span class="winrate wr-yellow-decent">50.7%</span>
+                    <span class="matches">6 622 Games</span>
+                </div>
+            </div>
+            <div class="matchups-row">
+                <div class="champ-info">
+                    <img src="img/mathups/fizz.webp" alt="">
+                    <span class="champ-name">Fizz</span>
+                </div>
+                <div class="stats">
+                    <span class="winrate wr-yellow-decent">50.5%</span>
+                    <span class="matches">4 297 Games</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="worst" class="tab-content">
+            <h2 class="section-title">Best matchups for Katarina</h2>
+            <p class="section-desc">These champs are <span class="weak">weak</span> against Katarina at most phases of the game. They’re listed based on their win rate against Katarina.</p>
+            
+            <div class="matchups-row">
+                <div class="champ-info">
+                    <img src="img/mathups/taliyah.webp" alt="">
+                    <span class="champ-name">Taliyah</span>
+                </div>
+                <div class="stats">
+                    <span class="winrate wr-green-high">41.3%</span>
+                    <span class="matches">1 007 Games</span>
+                </div>
+            </div>
+            <div class="matchups-row">
+                <div class="champ-info">
+                    <img src="img/mathups/syndra.webp" alt="">
+                    <span class="champ-name">Syndra</span>
+                </div>
+                <div class="stats">
+                    <span class="winrate wr-green-high">44.6%</span>
+                    <span class="matches">2 939 Games</span>
+                </div>
+            </div>
+            <div class="matchups-row">
+                <div class="champ-info">
+                    <img src="img/mathups/azir.webp" alt="">
+                    <span class="champ-name">Azir</span>
+                </div>
+                <div class="stats">
+                    <span class="winrate wr-green-high">45.1%</span>
+                    <span class="matches">2 056 Games</span>
+                </div>
+            </div>
+            <div class="matchups-row">
+                <div class="champ-info">
+                    <img src="img/mathups/hwei.webp" alt="">
+                    <span class="champ-name">Hwei</span>
+                </div>
+                <div class="stats">
+                    <span class="winrate wr-green-high">45.6%</span>
+                    <span class="matches">2 536 Games</span>
+                </div>
+            </div>
+            <div class="matchups-row">
+                <div class="champ-info">
+                    <img src="img/mathups/orianna.webp" alt="">
+                    <span class="champ-name">Orianna</span>
+                </div>
+                <div class="stats">
+                    <span class="winrate wr-green-high">45.6%</span>
+                    <span class="matches">3 162 Games</span>
+                </div>
+            </div>
+            <div class="matchups-row">
+                <div class="champ-info">
+                    <img src="img/mathups/aurora.webp" alt="">
+                    <span class="champ-name">Aurora</span>
+                </div>
+                <div class="stats">
+                    <span class="winrate wr-green-high">45.6%</span>
+                    <span class="matches">3 076 Games</span>
+                </div>
+            </div>
+            <div class="matchups-row">
+                <div class="champ-info">
+                    <img src="img/mathups/yone.webp" alt="">
+                    <span class="champ-name">Yone</span>
+                </div>
+                <div class="stats">
+                    <span class="winrate wr-green-high">45.8%</span>
+                    <span class="matches">4 370 Games</span>
+                </div>
+            </div>
+            <div class="matchups-row">
+                <div class="champ-info">
+                    <img src="img/mathups/xerath.webp" alt="">
+                    <span class="champ-name">Xerath</span>
+                </div>
+                <div class="stats">
+                    <span class="winrate wr-green-higher">46.8%</span>
+                    <span class="matches">4 138 Games</span>
+                </div>
+            </div>
+            <div class="matchups-row">
+                <div class="champ-info">
+                    <img src="img/mathups/veigar.webp" alt="">
+                    <span class="champ-name">Veigar</span>
+                </div>
+                <div class="stats">
+                    <span class="winrate wr-green-higher">47.4%</span>
+                    <span class="matches">3 794 Games</span>
+                </div>
+            </div>
+            <div class="matchups-row">
+                <div class="champ-info">
+                    <img src="img/mathups/talon.webp" alt="">
+                    <span class="champ-name">Talon</span>
+                </div>
+                <div class="stats">
+                    <span class="winrate wr-green-higher">48.0%</span>
+                    <span class="matches">1 861 Games</span>
+                </div>
+            </div>
+            <div class="matchups-row">
+                <div class="champ-info">
+                    <img src="img/mathups/velkoz.webp" alt="">
+                    <span class="champ-name">Vel'Koz</span>
+                </div>
+                <div class="stats">
+                    <span class="winrate wr-green-higher">48.2%</span>
+                    <span class="matches">901 Games</span>
+                </div>
+            </div>
+            <div class="matchups-row">
+                <div class="champ-info">
+                    <img src="img/mathups/pantheon.webp" alt="">
+                    <span class="champ-name">Pantheon</span>
+                </div>
+                <div class="stats">
+                    <span class="winrate wr-yellow-decent">48.4%</span>
+                    <span class="matches">981 Games</span>
+                </div>
+            </div>
+            <div class="matchups-row">
+                <div class="champ-info">
+                    <img src="img/mathups/zed.webp" alt="">
+                    <span class="champ-name">Zed</span>
+                </div>
+                <div class="stats">
+                    <span class="winrate wr-yellow-decent">48.5%</span>
+                    <span class="matches">6 521 Games</span>
+                </div>
+            </div>
+            <div class="matchups-row">
+                <div class="champ-info">
+                    <img src="img/mathups/qiyana.webp" alt="">
+                    <span class="champ-name">Qiyana</span>
+                </div>
+                <div class="stats">
+                    <span class="winrate wr-yellow-decent">48.6%</span>
+                    <span class="matches">2 428 Games</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            let i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+
+</body>
+</html>

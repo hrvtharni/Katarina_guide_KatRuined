@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KatRuined - Builds and Runes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/builds_and_runes.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: rgba(0, 0, 0, 0.747);">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="index.html" style="color: #ff1e3c; font-weight: bold; font-size: 30px;">KatRuined</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="builds and runes.html">Builds & Runes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="matchups.html">Matchups</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Other
+          </a>
+           <ul class="dropdown-menu" style="background-color: rgba(46, 0, 0, 0.329);">
+            <li><a class="dropdown-item" href="story.html" style="color: white;">Story</a></li>
+            <li><a class="dropdown-item" href="skins.html" style="color: white;">Skins</a></li>
+          </ul>
+        </li>
+        
+    </div>
+    </div>
+    </nav>
+
+
+<div class="container py-5">
+
+    <h2 class="section-title text-center mb-5">Builds and Runes</h2>
+    
+
+    <div class="build-wrapper">
+
+        <div class="build-card" onclick="toggleBuild(this)">
+            <div class="build-header">
+                <div>
+                    <h3>Full Ability Power</h3>
+                    <p class="build-subtext">High burst damage assassin build for snowballing. Strongest against low-CC, low-defense team compositions</p>
+                </div>
+                <i class="bi bi-chevron-down"></i>
+            </div>
+
+            <div class="build-details">
+
+                <div class="build-section">
+                    <h4>Runes</h4>
+                    <div class="icon-row">
+                        <img src="img/Runes/DOMINATION.webp" data-bs-toggle="tooltip" data-bs-title="Domination">
+                        <img src="img/Runes/electro.webp" style="width: 80px;" data-bs-toggle="tooltip" data-bs-title="Electrocute">
+                        <img src="img/Runes/sudden impact.webp" data-bs-toggle="tooltip" data-bs-title="Sudden Impact">
+                        <img src="img/Runes/mementos.webp" data-bs-toggle="tooltip" data-bs-title="Grisly Mementos">
+                        <img src="img/Runes/RelentlessHunter.webp" data-bs-toggle="tooltip" data-bs-title="Relentless Hunter">
+                    </div>
+                </div>
+                <div class="build-section">
+                    <div class="icon-row">
+                        <img src="img/Runes/precision.webp" data-bs-toggle="tooltip" data-bs-title="Precision">
+                        <img src="img/Runes/triupmh.webp" style="width: 40px; margin: 20px;" data-bs-toggle="tooltip" data-bs-title="Triumph">
+                        <img src="img/Runes/grace.webp" style="width: 40px; margin: 20px;" data-bs-toggle="tooltip" data-bs-title="Coup de Grace">
+                        <img src="img/Runes/adaptive-force.webp" style="width: 25px; margin-left: 25px;" data-bs-toggle="tooltip" data-bs-title="Adaptive Force">
+                        <img src="img/Runes/adaptive-force.webp" style="width: 25px;" data-bs-toggle="tooltip" data-bs-title="Adaptive Force">
+                        <img src="img/Runes/health-scaling.webp" style="width: 25px;" data-bs-toggle="tooltip" data-bs-title="Health Scaling">
+                    </div>
+                </div>
+
+                <div class="build-section">
+                    <h4>Spells</h4>
+                    <div class="icon-row">
+                        <img src="img/spells/SummonerFlash.webp" data-bs-toggle="tooltip" data-bs-title="Flash">
+                        <img src="img/spells/SummonerIgnite.webp" data-bs-toggle="tooltip" data-bs-title="Ignite">
+                    </div>
+                </div>
+
+                <div class="build-section">
+                    <h4>Starter Items</h4>
+                    <div class="icon-row">
+                        <img src="img/starter items/dark seal.webp" data-bs-toggle="tooltip" data-bs-title="Dark Seal">
+                        <img src="img/starter items/potion.webp" data-bs-toggle="tooltip" data-bs-title="Refillable Potion">
+                        <img src="img/starter items/ward.webp" data-bs-toggle="tooltip" data-bs-title="Stealth Ward">
+                    </div>
+                </div>
+
+                <div class="build-section">
+                    <h4>Core Items</h4>
+                    <div class="icon-row">
+                        <img src="img/items/lich bane.webp" data-bs-toggle="tooltip" data-bs-title="Lich Bane">
+                        <img src="img/items/sorcerer shoes.webp" data-bs-toggle="tooltip" data-bs-title="Sorcerer Shoes">
+                        <img src="img/items/shadowflame.webp" data-bs-toggle="tooltip" data-bs-title="Shadowflame">
+                    </div>
+                </div>
+
+                <div class="build-section">
+                    <h4>Full Build</h4>
+                    <div class="icon-row">
+                        <img src="img/items/lich bane.webp" style="opacity: 0.5;" data-bs-toggle="tooltip" data-bs-title="Lich Bane">
+                        <img src="img/items/sorcerer shoes.webp" style="opacity: 0.5;"  data-bs-toggle="tooltip" data-bs-title="Sorcerer Shoes">
+                        <img src="img/items/shadowflame.webp" style="opacity: 0.5;" data-bs-toggle="tooltip" data-bs-title="Shadowflame">
+                        <img src="img/items/mejais.webp" data-bs-toggle="tooltip" data-bs-title="Mejai's Soulstealer">
+                        <img src="img/items/rabadon.webp" data-bs-toggle="tooltip" data-bs-title="Rabadon's Deathcap">
+                        <img src="img/items/zhonya.webp" data-bs-toggle="tooltip" data-bs-title="Zhonya's Hourglass">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="build-card" onclick="toggleBuild(this)">
+            <div class="build-header">
+                <div>
+                    <h3>Bruiser Ability Power</h3>
+                    <p class="build-subtext">Strong into tanky and bruiser heavy teams. Excels in extended fights and against HP-stacking champions</p>
+                </div>
+                <i class="bi bi-chevron-down"></i>
+            </div>
+
+            <div class="build-details">
+
+                <div class="build-section">
+                    <h4>Runes</h4>
+                    <div class="icon-row">
+                        <img src="img/Runes/precision.webp"  data-bs-toggle="tooltip" data-bs-title="Precision">
+                        <img src="img/Runes/Conqueror.webp" style="width: 80px;"  data-bs-toggle="tooltip" data-bs-title="Conqueror">
+                        <img src="img/Runes/triupmh.webp" data-bs-toggle="tooltip" data-bs-title="Triumph">
+                        <img src="img/Runes/LegendAlacrity.webp"  data-bs-toggle="tooltip" data-bs-title="Legend-Alacrity">
+                        <img src="img/Runes/LastStand.webp" data-bs-toggle="tooltip" data-bs-title="Last Stand">
+                    </div>
+                </div>
+
+                <div class="build-section">
+                    <div class="icon-row">
+                        <img src="img/Runes/resolve.webp"  data-bs-toggle="tooltip" data-bs-title="Resolve">
+                        <img src="img/Runes/second-wind.webp" style="width: 40px; margin: 20px;"  data-bs-toggle="tooltip" data-bs-title="Second Wind">
+                        <img src="img/Runes/overgrowth.webp" style="width: 40px; margin: 20px;"  data-bs-toggle="tooltip" data-bs-title="Overgrowth">
+                        <img src="img/Runes/adaptive-force.webp" style="width: 25px; margin-left: 25px;" data-bs-toggle="tooltip" data-bs-title="Adaptive Force">
+                        <img src="img/Runes/adaptive-force.webp" style="width: 25px;" data-bs-toggle="tooltip" data-bs-title="Adaptive Force">
+                        <img src="img/Runes/defense.webp" style="width: 30px;" data-bs-toggle="tooltip" data-bs-title="Defense">
+                    </div>
+                </div>
+
+                <div class="build-section">
+                    <h4>Spells</h4>
+                    <div class="icon-row">
+                        <img src="img/spells/SummonerFlash.webp" data-bs-toggle="tooltip" data-bs-title="Flash">
+                        <img src="img/spells/SummonerTeleport.webp" data-bs-toggle="tooltip" data-bs-title="Teleport">
+                    </div>
+                </div>
+
+                <div class="build-section">
+                    <h4>Starter Items</h4>
+                    <div class="icon-row">
+                        <img src="img/starter items/dshield.webp" data-bs-toggle="tooltip" data-bs-title="Doran Shield">
+                        <img src="img/starter items/red potion.webp" data-bs-toggle="tooltip" data-bs-title="Health Potion">
+                        <img src="img/starter items/ward.webp" data-bs-toggle="tooltip" data-bs-title="Stealth Ward">
+                    </div>
+                </div>
+
+                <div class="build-section">
+                    <h4>Core Items</h4>
+                    <div class="icon-row">
+                        <img src="img/items/nashor.webp" data-bs-toggle="tooltip" data-bs-title="Nashor's Tooth">
+                        <img src="img/items/mrshoes.webp" data-bs-toggle="tooltip" data-bs-title="Mercury's Treads">
+                        <img src="img/items/gunblade.webp" data-bs-toggle="tooltip" data-bs-title="Hextech Gunblade">
+                    </div>
+                </div>
+
+                <div class="build-section">
+                    <h4>Full Build</h4>
+                    <div class="icon-row">
+                        <img src="img/items/nashor.webp" style="opacity: 0.5;" data-bs-toggle="tooltip" data-bs-title="Nashor's Tooth">
+                        <img src="img/items/mrshoes.webp" style="opacity: 0.5;" data-bs-toggle="tooltip" data-bs-title="Mercury's Treads">
+                        <img src="img/items/gunblade.webp" style="opacity: 0.5;" data-bs-toggle="tooltip" data-bs-title="Hextech Gunblade">
+                        <img src="img/items/liandry.webp" data-bs-toggle="tooltip" data-bs-title="Liandry's Torment">
+                        <img src="img/items/zhonya.webp" data-bs-toggle="tooltip" data-bs-title="Zhonya's Hourglass">
+                        <img src="img/items/voidstaff.webp" data-bs-toggle="tooltip" data-bs-title="Void Staff">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="build-card" onclick="toggleBuild(this)">
+            <div class="build-header">
+                <div>
+                    <h3>On Hit Attack Damage</h3>
+                    <p class="build-subtext">AD excels in extended fights with strong sustained damage. Performs well against bruisers and tanks.</p>
+                </div>
+                <i class="bi bi-chevron-down"></i>
+            </div>
+
+            <div class="build-details">
+
+                <div class="build-section">
+                    <h4>Runes</h4>
+                    <div class="icon-row">
+                        <img src="img/Runes/precision.webp"  data-bs-toggle="tooltip" data-bs-title="Precision">
+                        <img src="img/Runes/Conqueror.webp" style="width: 80px;"  data-bs-toggle="tooltip" data-bs-title="Conqueror">
+                        <img src="img/Runes/triupmh.webp" data-bs-toggle="tooltip" data-bs-title="Triumph">
+                        <img src="img/Runes/LegendAlacrity.webp"  data-bs-toggle="tooltip" data-bs-title="Legend-Alacrity">
+                        <img src="img/Runes/LastStand.webp" data-bs-toggle="tooltip" data-bs-title="Last Stand">
+                    </div>
+                </div>
+
+                <div class="build-section">
+                    <div class="icon-row">
+                        <img src="img/Runes/DOMINATION.webp"  data-bs-toggle="tooltip" data-bs-title="Domination">
+                        <img src="img/Runes/sudden impact.webp" style="width: 40px; margin: 20px;"  data-bs-toggle="tooltip" data-bs-title="Sudden impact">
+                        <img src="img/Runes/RelentlessHunter.webp" style="width: 40px; margin: 20px;"  data-bs-toggle="tooltip" data-bs-title="Relentless Hunter">
+                        <img src="img/Runes/attackspeed.webp" style="width: 25px; margin-left: 25px;" data-bs-toggle="tooltip" data-bs-title="Attack Speed">
+                        <img src="img/Runes/adaptive-force.webp" style="width: 25px;" data-bs-toggle="tooltip" data-bs-title="Adaptive Force">
+                        <img src="img/Runes/defense.webp" style="width: 30px;" data-bs-toggle="tooltip" data-bs-title="Defense">
+                    </div>
+                </div>
+
+                <div class="build-section">
+                    <h4>Spells</h4>
+                    <div class="icon-row">
+                        <img src="img/spells/SummonerFlash.webp" data-bs-toggle="tooltip" data-bs-title="Flash">
+                        <img src="img/spells/SummonerIgnite.webp" data-bs-toggle="tooltip" data-bs-title="Teleport">
+                    </div>
+                </div>
+
+                <div class="build-section">
+                    <h4>Starter Items</h4>
+                    <div class="icon-row">
+                        <img src="img/starter items/doranblade.webp" data-bs-toggle="tooltip" data-bs-title="Doran Blade">
+                        <img src="img/starter items/red potion.webp" data-bs-toggle="tooltip" data-bs-title="Health Potion">
+                        <img src="img/starter items/ward.webp" data-bs-toggle="tooltip" data-bs-title="Stealth Ward">
+                    </div>
+                </div>
+
+                <div class="build-section">
+                    <h4>Core Items</h4>
+                    <div class="icon-row">
+                        <img src="img/items/krakenslayer.webp" data-bs-toggle="tooltip" data-bs-title="Kraken Slayer">
+                        <img src="img/items/PlatedSteelcaps.webp" data-bs-toggle="tooltip" data-bs-title="Plated Steelcaps">
+                        <img src="img/items/botrk.webp" data-bs-toggle="tooltip" data-bs-title="Blade of the Ruined King">
+                    </div>
+                </div>
+
+                <div class="build-section">
+                    <h4>Full Build</h4>
+                    <div class="icon-row">
+                        <img src="img/items/krakenslayer.webp" style="opacity: 0.5;" data-bs-toggle="tooltip" data-bs-title="Kraken Slayer">
+                        <img src="img/items/PlatedSteelcaps.webp" style="opacity: 0.5;" data-bs-toggle="tooltip" data-bs-title="Plated Steelcaps">
+                        <img src="img/items/botrk.webp" style="opacity: 0.5;" data-bs-toggle="tooltip" data-bs-title="Blade of the Ruined King">
+                        <img src="img/items/terminus.webp" data-bs-toggle="tooltip" data-bs-title="Terminus">
+                        <img src="img/items/witsend.webp" data-bs-toggle="tooltip" data-bs-title="Wit's End">
+                        <img src="img/items/deathsdance.webp" data-bs-toggle="tooltip" data-bs-title="Death's Dance">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="build-card" onclick="toggleBuild(this)">
+            <div class="build-header">
+                <div>
+                    <h3>Hybrid</h3>
+                    <p class="build-subtext">Hybrid provides a balance between burst and sustained damage. it is effective against mixed team compositions with both squishy and tanky targets.</p>
+                </div>
+                <i class="bi bi-chevron-down"></i>
+            </div>
+
+            <div class="build-details">
+
+                <div class="build-section">
+                    <h4>Runes</h4>
+                    <div class="icon-row">
+                        <img src="img/Runes/DOMINATION.webp"  data-bs-toggle="tooltip" data-bs-title="Domination">
+                        <img src="img/Runes/electro.webp" style="width: 80px;"  data-bs-toggle="tooltip" data-bs-title="Electrocute">
+                        <img src="img/Runes/sudden impact.webp" data-bs-toggle="tooltip" data-bs-title="Sudden Impact">
+                        <img src="img/Runes/mementos.webp"  data-bs-toggle="tooltip" data-bs-title="Grisly Mementos">
+                        <img src="img/Runes/RelentlessHunter.webp" data-bs-toggle="tooltip" data-bs-title="Relentless Hunter">
+                    </div>
+                </div>
+
+                <div class="build-section">
+                    <div class="icon-row">
+                        <img src="img/Runes/resolve.webp"  data-bs-toggle="tooltip" data-bs-title="Resolve">
+                        <img src="img/Runes/second-wind.webp" style="width: 40px; margin: 20px;"  data-bs-toggle="tooltip" data-bs-title="Second Wind">
+                        <img src="img/Runes/overgrowth.webp" style="width: 40px; margin: 20px;"  data-bs-toggle="tooltip" data-bs-title="Overgrowth">
+                        <img src="img/Runes/adaptive-force.webp" style="width: 25px; margin-left: 25px;" data-bs-toggle="tooltip" data-bs-title="Adaptive Force">
+                        <img src="img/Runes/adaptive-force.webp" style="width: 25px;" data-bs-toggle="tooltip" data-bs-title="Adaptive Force">
+                        <img src="img/Runes/health-scaling.webp" style="width: 30px;" data-bs-toggle="tooltip" data-bs-title="Health-Scaling">
+                    </div>
+                </div>
+
+                <div class="build-section">
+                    <h4>Spells</h4>
+                    <div class="icon-row">
+                        <img src="img/spells/SummonerFlash.webp" data-bs-toggle="tooltip" data-bs-title="Flash">
+                        <img src="img/spells/SummonerIgnite.webp" data-bs-toggle="tooltip" data-bs-title="Ignite">
+                    </div>
+                </div>
+
+                <div class="build-section">
+                    <h4>Starter Items</h4>
+                    <div class="icon-row">
+                        <img src="img/starter items/dshield.webp" data-bs-toggle="tooltip" data-bs-title="Doran Shield">
+                        <img src="img/starter items/red potion.webp" data-bs-toggle="tooltip" data-bs-title="Health Potion">
+                        <img src="img/starter items/ward.webp" data-bs-toggle="tooltip" data-bs-title="Stealth Ward">
+                    </div>
+                </div>
+
+                <div class="build-section">
+                    <h4>Core Items</h4>
+                    <div class="icon-row">
+                        <img src="img/items/nashor.webp" data-bs-toggle="tooltip" data-bs-title="Nashor's Tooth">
+                        <img src="img/items/mrshoes.webp" data-bs-toggle="tooltip" data-bs-title="Mercury's Treads">
+                        <img src="img/items/gunblade.webp" data-bs-toggle="tooltip" data-bs-title="Hextech Gunblade">
+                    </div>
+                </div>
+
+                <div class="build-section">
+                    <h4>Full Build</h4>
+                    <div class="icon-row">
+                        <img src="img/items/nashor.webp" style="opacity: 0.5;" data-bs-toggle="tooltip" data-bs-title="Nashor's Tooth">
+                        <img src="img/items/mrshoes.webp" style="opacity: 0.5;" data-bs-toggle="tooltip" data-bs-title="Mercury's Treads">
+                        <img src="img/items/gunblade.webp" style="opacity: 0.5;" data-bs-toggle="tooltip" data-bs-title="Hextech Gunblade">
+                        <img src="img/items/krakenslayer.webp" data-bs-toggle="tooltip" data-bs-title="Kraken Slayer">
+                        <img src="img/items/shadowflame.webp" data-bs-toggle="tooltip" data-bs-title="Shadowflame">
+                        <img src="img/items/zhonya.webp" data-bs-toggle="tooltip" data-bs-title="Zhonya's Hourglass">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="build-card" onclick="toggleBuild(this)">
+            <div class="build-header">
+                <div>
+                    <h3>Tank</h3>
+                    <p class="build-subtext">Tank focuses on survivability and extended fights rather than burst damage. Performs best against bruiser-heavy teams where fights last longer.</p>
+                </div>
+                <i class="bi bi-chevron-down"></i>
+            </div>
+
+            <div class="build-details">
+
+                <div class="build-section">
+                    <h4>Runes</h4>
+                    <div class="icon-row">
+                        <img src="img/Runes/precision.webp"  data-bs-toggle="tooltip" data-bs-title="Precision">
+                        <img src="img/Runes/Conqueror.webp" style="width: 80px;"  data-bs-toggle="tooltip" data-bs-title="Conqueror">
+                        <img src="img/Runes/triupmh.webp" data-bs-toggle="tooltip" data-bs-title="Triumph">
+                        <img src="img/Runes/LegendAlacrity.webp"  data-bs-toggle="tooltip" data-bs-title="Legend-Alacrity">
+                        <img src="img/Runes/LastStand.webp" data-bs-toggle="tooltip" data-bs-title="Last Stand">
+                    </div>
+                </div>
+
+                <div class="build-section">
+                    <div class="icon-row">
+                        <img src="img/Runes/resolve.webp"  data-bs-toggle="tooltip" data-bs-title="Resolve">
+                        <img src="img/Runes/Conditioning.webp" style="width: 40px; margin: 20px;"  data-bs-toggle="tooltip" data-bs-title="Conditioning">
+                        <img src="img/Runes/overgrowth.webp" style="width: 40px; margin: 20px;"  data-bs-toggle="tooltip" data-bs-title="Overgrowth">
+                        <img src="img/Runes/attackspeed.webp" style="width: 25px; margin-left: 25px;" data-bs-toggle="tooltip" data-bs-title="Attack Speed">
+                        <img src="img/Runes/movespeed.webp" style="width: 25px;" data-bs-toggle="tooltip" data-bs-title="Move Speed">
+                        <img src="img/Runes/tenacityandslowresist.webp" style="width: 30px;" data-bs-toggle="tooltip" data-bs-title="Tenacity and Slow Resist">
+                    </div>
+                </div>
+
+                <div class="build-section">
+                    <h4>Spells</h4>
+                    <div class="icon-row">
+                        <img src="img/spells/SummonerFlash.webp" data-bs-toggle="tooltip" data-bs-title="Flash">
+                        <img src="img/spells/SummonerTeleport.webp" data-bs-toggle="tooltip" data-bs-title="Teleport">
+                    </div>
+                </div>
+
+                <div class="build-section">
+                    <h4>Starter Items</h4>
+                    <div class="icon-row">
+                        <img src="img/starter items/dshield.webp" data-bs-toggle="tooltip" data-bs-title="Doran Shield">
+                        <img src="img/starter items/red potion.webp" data-bs-toggle="tooltip" data-bs-title="Health Potion">
+                        <img src="img/starter items/ward.webp" data-bs-toggle="tooltip" data-bs-title="Stealth Ward">
+                    </div>
+                </div>
+
+                <div class="build-section">
+                    <h4>Core Items</h4>
+                    <div class="icon-row">
+                        <img src="img/items/heartsteel.webp" data-bs-toggle="tooltip" data-bs-title="Heartsteel">
+                        <img src="img/items/PlatedSteelcaps.webp" data-bs-toggle="tooltip" data-bs-title="Plated Steelcaps">
+                        <img src="img/items/titanic.webp" data-bs-toggle="tooltip" data-bs-title="Titanic Hydra">
+                    </div>
+                </div>
+
+                <div class="build-section">
+                    <h4>Full Build</h4>
+                    <div class="icon-row">
+                        <img src="img/items/heartsteel.webp" style="opacity: 0.5;" data-bs-toggle="tooltip" data-bs-title="Heartsteel">
+                        <img src="img/items/PlatedSteelcaps.webp" style="opacity: 0.5;" data-bs-toggle="tooltip" data-bs-title="Plated Steelcaps">
+                        <img src="img/items/titanic.webp" style="opacity: 0.5;" data-bs-toggle="tooltip" data-bs-title="Titanic Hydra">
+                        <img src="img/items/botrk.webp" data-bs-toggle="tooltip" data-bs-title="Blade of the Ruined King">
+                        <img src="img/items/terminus.webp" data-bs-toggle="tooltip" data-bs-title="Terminus">
+                        <img src="img/items/despair.webp" data-bs-toggle="tooltip" data-bs-title="Undending Despair">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    function toggleBuild(card) {
+
+    const allDetails = document.querySelectorAll(".build-details");
+    const allIcons = document.querySelectorAll(".build-header i");
+
+    allDetails.forEach(d => {
+        if (d !== card.querySelector(".build-details")) {
+            d.classList.remove("active");
+        }
+    });
+
+    allIcons.forEach(i => {
+        if (i !== card.querySelector("i")) {
+            i.classList.remove("rotate");
+        }
+    });
+
+    const details = card.querySelector(".build-details");
+    const icon = card.querySelector("i");
+
+    details.classList.toggle("active");
+    icon.classList.toggle("rotate");
+}
+
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+
+    tooltipTriggerList.forEach(function (el) {
+
+        el.addEventListener("click", function (e) {
+            e.stopPropagation();
+        });
+
+        new bootstrap.Tooltip(el);
+
+    });
+</script>
+</body>
+</html>

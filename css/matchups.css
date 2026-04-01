@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background-color: rgba(255, 0, 0, 0.199);
+}
+
+::-moz-selection {
+  background-color: rgba(255, 0, 0, 0.199);
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #ff1e3c;
+    color: white;
+}
+.navbar-dark .navbar-nav .nav-link {
+    transition: color 0.3s ease;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ff1e3c;
+}
+
+body {
+    background: #000;
+    background: linear-gradient(223deg, rgb(0, 0, 0) 0%, rgb(40, 10, 10) 0%, rgb(8, 0, 0) 69%);
+    color: white;
+    overscroll-behavior: unset;
+    min-height: 100vh;
+}
+
+.matchups-container {
+    max-width: 550px;
+    margin: 40px auto;
+    background-color: #2b0c0c;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.tab-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #2e2e4a;
+}
+
+.tab-btn {
+    flex: 1;
+    background: none;
+    border: none;
+    padding: 12px;
+    color: #888;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    border-bottom: 3px solid transparent;
+}
+
+.tab-btn.active {
+    color: #ff1e3c;
+    border-bottom: 3px solid #ff1e3c;
+}
+
+.tab-btn:hover {
+    color: white;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.matchups-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #351f1f;
+    margin-bottom: 8px;
+    padding: 12px 18px;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.matchups-row:hover {
+    background: #462828;
+    transform: scale(1.01);
+}
+
+.champ-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.champ-info img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 3px solid #8d0404;
+}
+
+.champ-name {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.winrate {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.matches {
+    color: #707090;
+    font-size: 0.85rem;
+    min-width: 80px;
+    text-align: right;
+}
+
+/* SZÍNEK */
+.wr-green-high { color: #33ff00; }
+.wr-green-higher { color: rgb(180, 255, 81)}
+.wr-yellow-decent {color: rgb(255, 153, 0);}
+.wr-red-worst { color: rgb(253, 33, 33)}
+.wr-red-critical { color: #ff4e7e; }
+.wr-red-low { color: #ff85a2; }
+
+.section-title {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.section-desc {
+    color: #a0a0c0;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.strong{
+    color: red;
+    font-weight: bold;
+}
+
+.weak{
+    color: rgb(0, 255, 0);
+    font-weight: bold;
+}
