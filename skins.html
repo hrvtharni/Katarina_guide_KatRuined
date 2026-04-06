@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KatRuined</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="css/skins.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: rgba(0, 0, 0, 0.808);">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="index.html" style="color: #ff1e3c; font-weight: bold; font-size: 30px;">KatRuined</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="builds and runes.html">Builds & Runes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="matchups.html">Matchups</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Other
+          </a>
+          <ul class="dropdown-menu" style="background-color: rgba(46, 0, 0, 0.329);">
+            <li><a class="dropdown-item" href="story.html" style="color: white;">Story</a></li>
+            <li><a class="dropdown-item" href="skins.html" style="color: white;">Skins</a></li>
+          </ul>
+        </li>
+        
+    </div>
+    </div>
+    </nav>
+
+
+    <div class="container">
+        <h2 class="skins_title">Skins</h2>
+        <div id="arrow"><img src="img/skins/left-arrow.png" alt=""></div>
+        <div class="bigger">
+            <div class="biggerpicture">
+                <img src="img/skins/default.webp" alt="Katarina">
+                <img src="img/skins/mercenary.webp" alt="Mercenary Katarina">
+                <img src="img/skins/redcard.webp" alt="Red Card Katarina">
+                <img src="img/skins/bilgewater.webp" alt="Bilgewater Katarina">
+                <img src="img/skins/kittycat.webp" alt="Kitty Cat Katarina">
+                <img src="img/skins/highcommand.webp" alt="High Command Katarina">
+                <img src="img/skins/sandstorm.webp" alt="Sandstorm Katarina">
+                <img src="img/skins/slaybelle.webp" alt="Slay Belle Katarina">
+                <img src="img/skins/warringkingdoms.webp" alt="Warring Kingdoms Katarina">
+                <img src="img/skins/project.webp" alt="Project Katarina">
+                <img src="img/skins/deathsworn.webp" alt="Death Sworn katarina">
+                <img src="img/skins/battleacademia.webp" alt="Battle Academia Katarina">
+                <img src="img/skins/bloodmoon.webp" alt="Blood Moon Katarina">
+                <img src="img/skins/battlequeen.webp" alt="Battle Queen Katarina">
+                <img src="img/skins/highnoon.webp" alt="High Noon Katarina">
+                <img src="img/skins/faeriecourt.webp" alt="Faerie Court Katarina">
+                <img src="img/skins/pfaeriecourt.webp" alt="Prestige Faerie Court Katarina">
+                <img src="img/skins/chosenofthewolf.webp" alt="Chosen of the Wolf Katarina">
+                <img src="img/skins/pmasqueoftheblackrose.webp" alt="Prestige Masque of the Black Rose Katarina">
+                <img src="img/skins/petalsofspring.webp" alt="Petals of Spring Katarina">
+            </div>
+            <div class="caption">
+                <div id="all_number"></div>
+                <div class="per">&nbsp;/&nbsp;</div>
+                <div id="active_number"></div>
+                <div class="pont">.&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                <div id="active_image_name"></div>
+            </div>
+        </div>
+        <div id="arrow2"><img src="img/skins/right-arrow.png" alt=""></div>
+    </div>
+    
+</body>
+<script>
+$(document).ready(function () {
+    $(".biggerpicture img").hide();
+    $(".biggerpicture img:first-child").addClass("active").show();
+
+    $("#all_number").text($(".biggerpicture img").length);
+    $("#active_number").text(1);
+    $("#active_image_name").text($(".biggerpicture img:first-child").attr("alt"));
+
+    // Jobbra nyíl (#arrow2)
+    $("#arrow2").click(function () {
+        let active_image = $(".biggerpicture img.active");
+        let next_image = active_image.next("img");
+
+        if (next_image.length > 0) {
+            active_image.removeClass("active").fadeOut(500);
+            next_image.addClass("active").fadeIn(500);
+
+            $("#active_number").text($(".biggerpicture img").index(next_image) + 1);
+            $("#active_image_name").text(next_image.attr("alt"));
+        }
+    });
+
+    $("#arrow").click(function () {
+        let active_image = $(".biggerpicture img.active");
+        let prev_image = active_image.prev("img");
+
+        if (prev_image.length > 0) { // Ha van még kép hátra
+            active_image.removeClass("active").fadeOut(500);
+            prev_image.addClass("active").fadeIn(500);
+
+            $("#active_number").text($(".biggerpicture img").index(prev_image) + 1);
+            $("#active_image_name").text(prev_image.attr("alt"));
+        }
+    });
+});
+</script>
+</html>

@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background-color: rgba(255, 0, 0, 0.199);
+}
+
+::-moz-selection {
+  background-color: rgba(255, 0, 0, 0.199);
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #ff1e3c;
+    color: white;
+}
+.navbar-dark .navbar-nav .nav-link {
+    transition: color 0.3s ease;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ff1e3c;
+}
+
+body {
+    background: #000;
+    background: linear-gradient(223deg, rgb(0, 0, 0) 0%, rgb(40, 10, 10) 0%, rgb(8, 0, 0) 69%);
+    color: white;
+    overscroll-behavior: unset;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.skins_title {
+    color: #ff1e3c;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 0 0 15px rgba(255, 30, 60, 0.5);
+}
+
+
+.bigger {
+    display: inline-block;
+    position: relative;
+    width: 80%;
+    max-width: 900px;
+}
+
+.biggerpicture {
+    position: relative;
+    height: 500px;
+    background: #000;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    box-shadow: 0 0 30px #58000c;
+    overflow: hidden;
+}
+
+.biggerpicture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#arrow, #arrow2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+#arrow { left: 20px; }
+#arrow2 { right: 20px; }
+
+#arrow:hover, #arrow2:hover {
+    background: rgba(255, 30, 60, 0.8);
+    border-color: white;
+    box-shadow: 0 0 15px #ff1e3c;
+}
+
+#arrow img, #arrow2 img {
+    width: 40px;
+    filter: invert(1);
+}
+
+.caption {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    font-size: 20px;
+    background: rgba(255, 30, 60, 0.1);
+    color: white;
+}
+
+#active_image_name {
+    font-weight: bold;
+    color: #ff1e3c;
+}
+
+.pont, .per{
+    color: #666;
+}
+
