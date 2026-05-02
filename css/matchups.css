@@ -5,31 +5,37 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-::selection {
+::selection{
   background-color: rgba(255, 0, 0, 0.199);
 }
 
-::-moz-selection {
+::-moz-selection{
   background-color: rgba(255, 0, 0, 0.199);
 }
 
-.dropdown-menu .dropdown-item:hover {
+body{
+    background: #000;
+    background: linear-gradient(223deg, rgba(0, 0, 0, 1) 0%, rgba(224, 70, 70, 1) 0%, rgba(0, 0, 0, 1) 69%);
+    color: white;
+    overscroll-behavior: unset;
+}
+
+footer{
+    text-align: center;
+    font-weight: bold;
+    color: #ff1e3c;
+    font-size: 17px;
+}
+
+.dropdown-menu .dropdown-item:hover{
     background-color: #ff1e3c;
     color: white;
 }
-.navbar-dark .navbar-nav .nav-link {
+.navbar-dark .navbar-nav .nav-link{
     transition: color 0.3s ease;
 }
-.navbar-dark .navbar-nav .nav-link:hover {
+.navbar-dark .navbar-nav .nav-link:hover{
     color: #ff1e3c;
-}
-
-body {
-    background: #000;
-    background: linear-gradient(223deg, rgb(0, 0, 0) 0%, rgb(40, 10, 10) 0%, rgb(8, 0, 0) 69%);
-    color: white;
-    overscroll-behavior: unset;
-    min-height: 100vh;
 }
 
 .matchups-container {
@@ -41,14 +47,14 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-.tab-buttons {
+.tab-buttons{
     display: flex;
     gap: 10px;
     margin-bottom: 25px;
     border-bottom: 1px solid #2e2e4a;
 }
 
-.tab-btn {
+.tab-btn{
     flex: 1;
     background: none;
     border: none;
@@ -60,24 +66,24 @@ body {
     border-bottom: 3px solid transparent;
 }
 
-.tab-btn.active {
+.tab-btn.active{
     color: #ff1e3c;
     border-bottom: 3px solid #ff1e3c;
 }
 
-.tab-btn:hover {
+.tab-btn:hover{
     color: white;
 }
 
-.tab-content {
+.tab-content{
     display: none;
 }
 
-.tab-content.active {
+.tab-content.active{
     display: block;
 }
 
-.matchups-row {
+.matchups-row{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -88,41 +94,41 @@ body {
     transition: transform 0.2s;
 }
 
-.matchups-row:hover {
+.matchups-row:hover{
     background: #462828;
     transform: scale(1.01);
 }
 
-.champ-info {
+.champ-info{
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-.champ-info img {
+.champ-info img{
     width: 42px;
     height: 42px;
     border-radius: 50%;
     border: 3px solid #8d0404;
 }
 
-.champ-name {
+.champ-name{
     font-weight: 600;
     text-transform: capitalize;
 }
 
-.stats {
+.stats{
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.winrate {
+.winrate{
     font-weight: bold;
     font-size: 1rem;
 }
 
-.matches {
+.matches{
     color: #707090;
     font-size: 0.85rem;
     min-width: 80px;
@@ -137,13 +143,13 @@ body {
 .wr-red-critical { color: #ff4e7e; }
 .wr-red-low { color: #ff85a2; }
 
-.section-title {
+.section-title{
     font-size: 1.2rem;
     color: white;
     margin-bottom: 5px;
 }
 
-.section-desc {
+.section-desc{
     color: #a0a0c0;
     font-size: 0.9rem;
     margin-bottom: 20px;

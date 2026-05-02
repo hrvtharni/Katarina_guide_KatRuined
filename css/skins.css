@@ -5,39 +5,47 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-::selection {
+::selection{
   background-color: rgba(255, 0, 0, 0.199);
 }
 
-::-moz-selection {
+::-moz-selection{
   background-color: rgba(255, 0, 0, 0.199);
 }
 
-.dropdown-menu .dropdown-item:hover {
-    background-color: #ff1e3c;
-    color: white;
-}
-.navbar-dark .navbar-nav .nav-link {
-    transition: color 0.3s ease;
-}
-.navbar-dark .navbar-nav .nav-link:hover {
-    color: #ff1e3c;
-}
-
-body {
+body{
     background: #000;
-    background: linear-gradient(223deg, rgb(0, 0, 0) 0%, rgb(40, 10, 10) 0%, rgb(8, 0, 0) 69%);
+    background: linear-gradient(223deg, rgba(0, 0, 0, 1) 0%, rgba(224, 70, 70, 1) 0%, rgba(0, 0, 0, 1) 69%);
     color: white;
     overscroll-behavior: unset;
     min-height: 100vh;
 }
 
-.container {
+footer{
+    text-align: center;
+    font-weight: bold;
+    color: #ff1e3c;
+    margin-top: 170px;
+    font-size: 17px;
+}
+
+.dropdown-menu .dropdown-item:hover{
+    background-color: #ff1e3c;
+    color: white;
+}
+.navbar-dark .navbar-nav .nav-link{
+    transition: color 0.3s ease;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #ff1e3c;
+}
+
+.container{
     text-align: center;
     padding-top: 50px;
 }
 
-.skins_title {
+.skins_title{
     color: #ff1e3c;
     margin-bottom: 20px;
     font-weight: bold;
@@ -45,14 +53,14 @@ body {
 }
 
 
-.bigger {
+.bigger{
     display: inline-block;
     position: relative;
-    width: 80%;
+    width: 85%;
     max-width: 900px;
 }
 
-.biggerpicture {
+.biggerpicture{
     position: relative;
     height: 500px;
     background: #000;
@@ -62,16 +70,17 @@ body {
     overflow: hidden;
 }
 
-.biggerpicture img {
+.biggerpicture img{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
 }
 
-#arrow, #arrow2 {
+#arrow, #arrow2{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -84,21 +93,23 @@ body {
     border: 1px solid transparent;
 }
 
-#arrow { left: 20px; }
-#arrow2 { right: 20px; }
+#arrow { left: 20px; 
+}
+#arrow2 { right: 20px; 
+}
 
-#arrow:hover, #arrow2:hover {
+#arrow:hover, #arrow2:hover{
     background: rgba(255, 30, 60, 0.8);
     border-color: white;
     box-shadow: 0 0 15px #ff1e3c;
 }
 
-#arrow img, #arrow2 img {
+#arrow img, #arrow2 img{
     width: 40px;
     filter: invert(1);
 }
 
-.caption {
+.caption{
     display: flex;
     justify-content: center;
     padding: 15px;
@@ -107,7 +118,7 @@ body {
     color: white;
 }
 
-#active_image_name {
+#active_image_name{
     font-weight: bold;
     color: #ff1e3c;
 }
@@ -115,4 +126,3 @@ body {
 .pont, .per{
     color: #666;
 }
-
