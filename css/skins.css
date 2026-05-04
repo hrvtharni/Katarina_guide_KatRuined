@@ -25,7 +25,8 @@ footer{
     text-align: center;
     font-weight: bold;
     color: #ff1e3c;
-    margin-top: 170px;
+    margin-top: 50px;
+    padding-bottom: 20px;
     font-size: 17px;
 }
 
@@ -40,89 +41,64 @@ footer{
     color: #ff1e3c;
 }
 
-.container{
+
+.skins_title{ 
+    color: #ff1e3c; 
+    margin-bottom: 30px; 
+    font-weight: bold; 
+}
+
+.galeria-haz{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nagy{
+    width: 800px;
     text-align: center;
-    padding-top: 50px;
 }
 
-.skins_title{
-    color: #ff1e3c;
-    margin-bottom: 20px;
-    font-weight: bold;
-    text-shadow: 0 0 15px rgba(255, 30, 60, 0.5);
-}
-
-
-.bigger{
-    display: inline-block;
+.nagykep{
+    height: 450px;
     position: relative;
-    width: 85%;
-    max-width: 900px;
-}
-
-.biggerpicture{
-    position: relative;
-    height: 500px;
-    background: #000;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    box-shadow: 0 0 30px #58000c;
+    border: 2px solid #ff1e3c;
     overflow: hidden;
+    background: #000;
 }
 
-.biggerpicture img{
+.nagykep img{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
 }
 
-#arrow, #arrow2{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
+
+#nyil, #nyil2{
     cursor: pointer;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 15px;
+    background: rgba(255, 30, 60, 0.2);
+    padding: 10px;
     border-radius: 50%;
-    transition: all 0.3s ease;
-    border: 1px solid transparent;
+    transition: 0.3s;
 }
 
-#arrow { left: 20px; 
-}
-#arrow2 { right: 20px; 
-}
+#nyil:hover, #nyil2:hover{ background: #ff1e3c; }
 
-#arrow:hover, #arrow2:hover{
-    background: rgba(255, 30, 60, 0.8);
-    border-color: white;
-    box-shadow: 0 0 15px #ff1e3c;
-}
+#nyil img, #nyil2 img{ width: 40px; filter: invert(1); }
 
-#arrow img, #arrow2 img{
-    width: 40px;
-    filter: invert(1);
-}
-
-.caption{
+.kepalairas{
     display: flex;
     justify-content: center;
-    padding: 15px;
     font-size: 20px;
-    background: rgba(255, 30, 60, 0.1);
-    color: white;
+    margin-top: 15px;
+    color: #ccc;
 }
 
 #active_image_name{
-    font-weight: bold;
-    color: #ff1e3c;
-}
-
-.pont, .per{
-    color: #666;
+    color: #ff1e3c; 
+    font-weight: bold; 
 }
